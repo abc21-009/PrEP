@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PrEP Botswana - HIV Prevention Resource</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta name="description" content="Comprehensive information about PrEP (Pre-Exposure Prophylaxis) for HIV prevention in Botswana. Learn about eligibility, access points, and more.">
+</head>
+<body>
+  <header id="site-header">
+    <div class="container">
+      <div class="logo">
+        <img src="https://images.pexels.com/photos/3938022/pexels-photo-3938022.jpeg?auto=compress&cs=tinysrgb&w=60" alt="">
+        <span>PrEP Botswana</span>
+      </div>
+      <nav>
+        <button id="mobile-menu-toggle" aria-label="Toggle menu">
+          <span class="hamburger"></span>
+        </button>
+        <ul id="main-menu">
+          <li><a href="#what-is-prep">What is PrEP</a></li>
+          <li><a href="#eligibility">Eligibility</a></li>
+          <li><a href="#access">How to Access</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#contact" class="btn btn-primary">Get Help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Take control of your health with PrEP</h1>
+          <p class="lead">PrEP is a safe, effective way to prevent HIV infection for people at high risk. Learn how you can access PrEP in Botswana.</p>
+          <div class="cta-buttons">
+            <a href="#eligibility-checker" class="btn btn-primary btn-lg">Check Your Eligibility</a>
+            <a href="#access" class="btn btn-outline btn-lg">Find PrEP Near You</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="what-is-prep" class="section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>What is PrEP?</h2>
+          <p>Pre-Exposure Prophylaxis is a powerful tool in preventing HIV</p>
+        </div>
+        <div class="two-column">
+          <div class="text-content">
+            <p>Pre-Exposure Prophylaxis (PrEP) is a medication taken by HIV-negative people to reduce their risk of HIV infection. When taken as prescribed, PrEP is highly effective at preventing HIV from sex or injection drug use.</p>
+            <p>PrEP contains the same medicines used to treat HIV. These medicines work by stopping HIV from taking hold and spreading throughout your body.</p>
+            <h3>How effective is PrEP?</h3>
+            <p>When taken as prescribed, PrEP reduces the risk of getting HIV from sex by about 99%. Among people who inject drugs, PrEP reduces the risk of getting HIV by at least 74% when taken consistently.</p>
+            <p>PrEP is even more effective when combined with other prevention methods like condoms and regular testing.</p>
+          </div>
+          <div class="image-content">
+            <img src="https://images.pexels.com/photos/7089401/pexels-photo-7089401.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Healthcare professional explaining medication to a patient" class="rounded-image">
+            <div class="info-box">
+              <div class="info-item">
+                <h4>99%</h4>
+                <p>Effective against HIV from sexual contact when taken correctly</p>
+              </div>
+              <div class="info-item">
+                <h4>74%+</h4>
+                <p>Effective for people who inject drugs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="eligibility" class="section-dark">
+      <div class="container">
+        <div class="section-header">
+          <h2>Who is Eligible for PrEP?</h2>
+          <p>PrEP is recommended for people who are at high risk of HIV infection</p>
+        </div>
+        <div class="eligibility-groups">
+          <div class="eligibility-card">
+            <div class="icon"><i class="fas fa-user-friends"></i></div>
+            <h3>Discordant Couples</h3>
+            <p>People in relationships where one partner has HIV and the other does not.</p>
+          </div>
+          <div class="eligibility-card">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h3>MSM</h3>
+            <p>Men who have sex with men who may be at higher risk of HIV exposure.</p>
+          </div>
+          <div class="eligibility-card">
+            <div class="icon"><i class="fas fa-venus"></i></div>
+            <h3>Sex Workers</h3>
+            <p>Individuals who engage in sex work and may have multiple partners.</p>
+          </div>
+          <div class="eligibility-card">
+            <div class="icon"><i class="fas fa-transgender-alt"></i></div>
+            <h3>Transgender People</h3>
+            <p>Transgender individuals who may face increased risk factors.</p>
+          </div>
+          <div class="eligibility-card">
+            <div class="icon"><i class="fas fa-syringe"></i></div>
+            <h3>People Who Inject Drugs</h3>
+            <p>Those who share needles or injection equipment.</p>
+          </div>
+          <div class="eligibility-card">
+            <div class="icon"><i class="fas fa-female"></i></div>
+            <h3>Adolescent Girls & Young Women</h3>
+            <p>Young women in areas with high HIV prevalence who may be at risk.</p>
+          </div>
+        </div>
+
+        <div id="eligibility-checker" class="checker-tool">
+          <h3>PrEP Eligibility Self-Assessment</h3>
+          <p>Answer these questions to see if PrEP might be right for you. This is not a medical diagnosis, but can help you decide if you should speak with a healthcare provider about PrEP.</p>
+          <div class="checker-form">
+            <form id="eligibility-form">
+              <div class="question-group">
+                <label for="q1">In the past 6 months, have you had sex without a condom with someone whose HIV status you didn't know?</label>
+                <div class="radio-options">
+                  <label><input type="radio" name="q1" value="yes"> Yes</label>
+                  <label><input type="radio" name="q1" value="no"> No</label>
+                </div>
+              </div>
+              <div class="question-group">
+                <label for="q2">Do you have a sexual partner who is living with HIV?</label>
+                <div class="radio-options">
+                  <label><input type="radio" name="q2" value="yes"> Yes</label>
+                  <label><input type="radio" name="q2" value="no"> No</label>
+                </div>
+              </div>
+              <div class="question-group">
+                <label for="q3">Have you been diagnosed with an STI in the past 6 months?</label>
+                <div class="radio-options">
+                  <label><input type="radio" name="q3" value="yes"> Yes</label>
+                  <label><input type="radio" name="q3" value="no"> No</label>
+                </div>
+              </div>
+              <div class="question-group">
+                <label for="q4">Do you share needles or equipment to inject drugs?</label>
+                <div class="radio-options">
+                  <label><input type="radio" name="q4" value="yes"> Yes</label>
+                  <label><input type="radio" name="q4" value="no"> No</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">See Results</button>
+            </form>
+            <div id="eligibility-result" class="hidden">
+              <!-- Results will be shown here via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="access" class="section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>How to Access PrEP in Botswana</h2>
+          <p>PrEP is available through various healthcare facilities across the country</p>
+        </div>
+        <div class="access-content">
+          <div class="steps-container">
+            <div class="step">
+              <div class="step-number">1</div>
+              <div class="step-content">
+                <h3>Consult a Healthcare Provider</h3>
+                <p>Visit a PrEP-providing facility to speak with a healthcare professional about your risk factors and whether PrEP is right for you.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">2</div>
+              <div class="step-content">
+                <h3>Get Tested for HIV</h3>
+                <p>You'll need a negative HIV test before starting PrEP. The facility will provide this test for free.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">3</div>
+              <div class="step-content">
+                <h3>Additional Health Checks</h3>
+                <p>Your healthcare provider will check your kidney function and for other STIs before prescribing PrEP.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">4</div>
+              <div class="step-content">
+                <h3>Receive Your PrEP Medication</h3>
+                <p>If approved, you'll receive your PrEP medication free of charge through Botswana's public health system.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-number">5</div>
+              <div class="step-content">
+                <h3>Follow-Up Visits</h3>
+                <p>Regular follow-up visits every 3 months are important to monitor your health and renew your prescription.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-finder">
+            <h3>Find PrEP Services Near You</h3>
+            <p>PrEP is available at select healthcare facilities across Botswana. Use the dropdown to find a location near you.</p>
+            <div class="location-selector">
+              <select id="region-select">
+                <option value="">Select your region</option>
+                <option value="gaborone">Gaborone</option>
+                <option value="francistown">Francistown</option>
+                <option value="molepolole">Molepolole</option>
+                <option value="maun">Maun</option>
+                <option value="serowe">Serowe</option>
+                <option value="jwaneng">Jwaneng</option>
+                <option value="lobatse">Lobatse</option>
+              </select>
+            </div>
+            <div id="location-results" class="location-results">
+              <!-- Results will be shown here via JavaScript -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="side-effects" class="section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Side Effects & Management</h2>
+          <p>Understanding potential side effects and how to manage them</p>
+        </div>
+        <div class="side-effects-content">
+          <div class="side-effects-info">
+            <p>Most people who take PrEP do not experience significant side effects. When side effects do occur, they're usually mild and go away within the first month of taking PrEP.</p>
+            
+            <h3>Common Side Effects</h3>
+            <ul class="side-effects-list">
+              <li>
+                <h4>Start-up Syndrome</h4>
+                <p>Some people experience nausea, headaches, or stomach discomfort when first starting PrEP. These symptoms typically resolve within a few weeks.</p>
+              </li>
+              <li>
+                <h4>Kidney Function</h4>
+                <p>PrEP can affect kidney function in rare cases. Your healthcare provider will monitor this through regular tests.</p>
+              </li>
+              <li>
+                <h4>Bone Density</h4>
+                <p>Minor decreases in bone density have been observed in some studies, but these changes are generally small and not clinically significant.</p>
+              </li>
+            </ul>
+
+            <div class="management-tips">
+              <h3>Management Tips</h3>
+              <div class="tip">
+                <i class="fas fa-clock"></i>
+                <div>
+                  <h4>Take with Food</h4>
+                  <p>Taking PrEP with a meal can help reduce nausea and stomach discomfort.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <i class="fas fa-calendar-alt"></i>
+                <div>
+                  <h4>Consistent Schedule</h4>
+                  <p>Taking PrEP at the same time each day can help your body adjust and maintain consistent drug levels.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <i class="fas fa-tint"></i>
+                <div>
+                  <h4>Stay Hydrated</h4>
+                  <p>Drinking plenty of water can help minimize some side effects and support kidney health.</p>
+                </div>
+              </div>
+              <div class="tip">
+                <i class="fas fa-user-md"></i>
+                <div>
+                  <h4>Regular Check-ups</h4>
+                  <p>Keep all follow-up appointments to monitor for any potential side effects.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-dark">
+      <div class="container">
+        <div class="section-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>Common questions about PrEP and HIV prevention</p>
+        </div>
+        <div class="faq-container">
+          <div class="accordion">
+            <div class="accordion-item">
+              <button id="accordion-button-1" aria-expanded="false">
+                <span class="accordion-title">Is PrEP the same as HIV treatment?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>No, PrEP (Pre-Exposure Prophylaxis) is used by HIV-negative people to prevent HIV infection. HIV treatment (antiretroviral therapy or ART) is used by people who already have HIV to treat the infection and prevent its progression.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-2" aria-expanded="false">
+                <span class="accordion-title">Does PrEP protect against other STIs or pregnancy?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>No, PrEP only protects against HIV. It does not protect against other sexually transmitted infections (STIs) like gonorrhea, chlamydia, or syphilis, nor does it prevent pregnancy. Condoms are still recommended to protect against other STIs and as a form of birth control.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-3" aria-expanded="false">
+                <span class="accordion-title">How long do I need to take PrEP before it becomes effective?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>For receptive anal sex, PrEP reaches maximum protection after about 7 days of daily use. For receptive vaginal sex and injection drug use, PrEP reaches maximum protection after about 21 days of daily use. It's important to continue using other prevention methods like condoms during this initial period.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-4" aria-expanded="false">
+                <span class="accordion-title">Can I stop taking PrEP once I start?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>Yes, PrEP is not a lifelong medication. It's meant to be used during periods when you are at risk of HIV infection. If your risk factors change, you can discuss stopping PrEP with your healthcare provider. It's important to continue taking PrEP for 28 days after your last potential exposure to HIV.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-5" aria-expanded="false">
+                <span class="accordion-title">How much does PrEP cost in Botswana?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>In Botswana, PrEP is provided free of charge through the public healthcare system. This includes the medication itself and the necessary follow-up testing and consultations. Private healthcare facilities may charge for consultations, but the medication is typically supplied through the government program.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-6" aria-expanded="false">
+                <span class="accordion-title">Can I take PrEP if I'm pregnant or breastfeeding?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>Yes, PrEP can be used during pregnancy and breastfeeding. Studies have not found significant health concerns for pregnant or breastfeeding women taking PrEP or for their babies. If you're pregnant or breastfeeding and at risk for HIV, discuss PrEP with your healthcare provider.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-7" aria-expanded="false">
+                <span class="accordion-title">Will people know I'm taking PrEP?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>Your PrEP use is confidential medical information. Healthcare providers are bound by confidentiality rules and cannot disclose your medical information without your permission. The PrEP pill bottle doesn't specifically indicate it's for HIV prevention, and you can always transfer pills to a different container for privacy.</p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button id="accordion-button-8" aria-expanded="false">
+                <span class="accordion-title">What if I miss a dose of PrEP?</span>
+                <span class="icon" aria-hidden="true"></span>
+              </button>
+              <div class="accordion-content">
+                <p>If you miss a dose, take it as soon as you remember. If it's almost time for your next dose, just take the next dose at the regular time. Don't take a double dose to make up for a missed one. Missing an occasional dose is not likely to reduce PrEP's effectiveness, but trying to take it consistently is important for maximum protection.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section-light">
+      <div class="container">
+        <div class="section-header">
+          <h2>Resources & Support</h2>
+          <p>Additional information and support for PrEP users</p>
+        </div>
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon"><i class="fas fa-file-pdf"></i></div>
+            <h3>PrEP User Guide</h3>
+            <p>A comprehensive guide to starting and maintaining PrEP treatment.</p>
+            <a href="#" class="btn btn-sm">Download PDF</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>Medication Reminder App</h3>
+            <p>Free app to help you remember to take your PrEP medication daily.</p>
+            <a href="#" class="btn btn-sm">Learn More</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-icon"><i class="fas fa-users"></i></div>
+            <h3>Support Groups</h3>
+            <p>Connect with other PrEP users for support and shared experiences.</p>
+            <a href="#" class="btn btn-sm">Find Groups</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-icon"><i class="fas fa-phone-alt"></i></div>
+            <h3>PrEP Hotline</h3>
+            <p>Call for confidential advice and information about PrEP.</p>
+            <a href="#" class="btn btn-sm">Get Number</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-icon"><i class="fas fa-video"></i></div>
+            <h3>Educational Videos</h3>
+            <p>Watch videos about PrEP usage, benefits, and experiences.</p>
+            <a href="#" class="btn btn-sm">Watch Now</a>
+          </div>
+          <div class="resource-card">
+            <div class="resource-icon"><i class="fas fa-question-circle"></i></div>
+            <h3>Counseling Services</h3>
+            <p>Access free, confidential counseling about PrEP and sexual health.</p>
+            <a href="#" class="btn btn-sm">Learn More</a>
+          </div>
+        </div>
+
+        <div class="partner-organizations">
+          <h3>Partner Organizations</h3>
+          <div class="partners-grid">
+            <div class="partner">
+              <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Tebelopele Logo">
+              <h4>Tebelopele</h4>
+              <p>Voluntary HIV testing and counseling centers across Botswana.</p>
+              <a href="#" class="link-arrow">Visit Website</a>
+            </div>
+            <div class="partner">
+              <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=100" alt="BONELA Logo">
+              <h4>BONELA</h4>
+              <p>Botswana Network on Ethics, Law and HIV/AIDS.</p>
+              <a href="#" class="link-arrow">Visit Website</a>
+            </div>
+            <div class="partner">
+              <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=100" alt="LEGABIBO Logo">
+              <h4>LEGABIBO</h4>
+              <p>Lesbians, Gays & Bisexuals of Botswana organization.</p>
+              <a href="#" class="link-arrow">Visit Website</a>
+            </div>
+            <div class="partner">
+              <img src="https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Ministry of Health Logo">
+              <h4>Ministry of Health</h4>
+              <p>Botswana's government health department.</p>
+              <a href="#" class="link-arrow">Visit Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-dark">
+      <div class="container">
+        <div class="section-header">
+          <h2>Get Help & Support</h2>
+          <p>Reach out for more information or personalized assistance</p>
+        </div>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h3>PrEP Hotline</h3>
+                <p>Toll-free: 0800 555 777</p>
+                <p>Available 24/7 for confidential support</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h3>Email Support</h3>
+                <p>prep@health.gov.bw</p>
+                <p>Response within 48 hours</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-comment-dots"></i>
+              <div>
+                <h3>SMS Service</h3>
+                <p>Text "PREP" to 8333</p>
+                <p>For information and callback requests</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h3>Visit a Clinic</h3>
+                <p>Find your nearest PrEP provider</p>
+                <a href="#access" class="link-light">View Locations</a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone">
+              </div>
+              <div class="form-group">
+                <label for="topic">Topic</label>
+                <select id="topic" name="topic">
+                  <option value="information">General Information</option>
+                  <option value="access">Access to PrEP</option>
+                  <option value="side-effects">Side Effects</option>
+                  <option value="support">Support Services</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="confidential" name="confidential">
+                <label for="confidential">I would like my inquiry to remain confidential</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg full-width">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <h3>About PrEP Botswana</h3>
+          <p>This website provides educational resources about Pre-Exposure Prophylaxis (PrEP) for HIV prevention in Botswana. Our goal is to increase awareness and access to PrEP for those who need it most.</p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#what-is-prep">What is PrEP</a></li>
+            <li><a href="#eligibility">Eligibility</a></li>
+            <li><a href="#access">How to Access</a></li>
+            <li><a href="#side-effects">Side Effects</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-policies">
+          <h3>Policies</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Accessibility Statement</a></li>
+          </ul>
+        </div>
+        <div class="footer-connect">
+          <h3>Connect With Us</h3>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+          <p>Subscribe to our newsletter:</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit" class="btn btn-sm">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 PrEP Botswana. All rights reserved.</p>
+        <p>This website was developed in support of the Botswana National HIV/AIDS Prevention Program.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/eligibility.js"></script>
+  <script src="js/locations.js"></script>
+  <script src="js/accordion.js"></script>
+</body>
+</html>

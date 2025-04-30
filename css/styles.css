@@ -628,6 +628,7 @@ footer {
   .section-header h2 {
     font-size: 32px;
     margin-bottom: 10px;
+    color: #1a202c;
   }
 
   .section-header p {
@@ -635,6 +636,33 @@ footer {
     color: #666;
   }
 
+  /* Mission styles */
+  .mission-section {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 15px;
+  }
+
+  .mission-title {
+    font-size: 24px;
+    color: #2c7a7b;
+    margin-bottom: 10px;
+  }
+
+  .brand-name {
+    color: #1a202c;
+    font-weight: 600;
+  }
+
+  .mission-text {
+    font-size: 16px;
+    color: #444;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  /* Team styles */
   .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -645,7 +673,7 @@ footer {
     background: #fff;
     border-radius: 12px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s;
   }
 
@@ -682,5 +710,13 @@ footer {
 
     .team-member h3 {
       font-size: 18px;
+    }
+
+    .mission-title {
+      font-size: 20px;
+    }
+
+    .mission-text {
+      font-size: 15px;
     }
   }

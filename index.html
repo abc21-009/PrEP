@@ -662,5 +662,150 @@
   <script src="js/eligibility.js"></script>
   <script src="js/locations.js"></script>
   <script src="js/accordion.js"></script>
+
+  <style>
+  #chatbot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    max-height: 400px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    z-index: 1000;
+  }
+
+  #chatbot-header {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #chatbot-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+  }
+
+  #chatbot-footer {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+
+  #user-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+  }
+
+  #send-btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+
+  #chat-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 999;
+  }
+
+  .chat-bubble {
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 8px;
+  }
+
+  .user-bubble {
+    background: #d1eaff;
+    align-self: flex-end;
+  }
+</style>
+
+<button id="chat-toggle">💬</button>
+
+<div id="chatbot-container">
+  <div id="chatbot-header">PrEP Assistant</div>
+  <div id="chatbot-body">
+    <div class="chat-bubble">Hi! Ask me something about PrEP 😊</div>
+  </div>
+  <div id="chatbot-footer">
+    <input type="text" id="user-input" placeholder="Ask a question..." />
+    <button id="send-btn">Send</button>
+  </div>
+</div>
+
+  <script>
+  const chatbotToggle = document.getElementById("chat-toggle");
+  const chatbotContainer = document.getElementById("chatbot-container");
+  const sendBtn = document.getElementById("send-btn");
+  const userInput = document.getElementById("user-input");
+  const chatbotBody = document.getElementById("chatbot-body");
+
+  const responses = {
+    "what is prep": "PrEP (Pre-Exposure Prophylaxis) is a daily medicine that helps prevent HIV before exposure.",
+    "how effective is prep": "PrEP is about 99% effective at preventing HIV from sexual contact and over 74% for people who inject drugs.",
+    "who should take prep": "Anyone at high risk of HIV exposure — including those with an HIV-positive partner or multiple sexual partners — can benefit from PrEP.",
+    "does prep have side effects": "Some users report nausea, headache, or fatigue during the first few weeks. These usually go away.",
+    "where can i get prep": "PrEP is available at public hospitals, clinics, and through trained healthcare providers in Botswana.",
+    "prep regimen in botswana": "In Botswana, PrEP is taken as a daily tablet (TDF 300mg / FTC 200mg), known as a fixed-dose combination (FDC).",
+    "can i stop taking prep": "You can stop PrEP if your risk of exposure to HIV reduces, but speak with a healthcare provider first.",
+    "how long does prep take to work": "PrEP reaches maximum protection in about 7 days for anal sex and 21 days for vaginal sex or injection drug use.",
+    "is prep safe for long-term use": "Yes. PrEP has been proven safe for long-term use, with regular kidney function monitoring advised.",
+    "can i take prep if i’m pregnant or breastfeeding": "Yes, PrEP is safe during pregnancy and breastfeeding for those at high risk of HIV.",
+    "does prep protect against other stds": "No, PrEP only protects against HIV. Use condoms to protect against other STIs like gonorrhea or chlamydia.",
+    "can i miss a dose": "It's best not to. If you miss one, take it as soon as you remember. Missing multiple doses may reduce effectiveness.",
+    "what does fdc mean": "FDC stands for Fixed Dose Combination – a single pill that combines two HIV medicines (TDF + FTC)."
+  };
+
+  chatbotToggle.onclick = () => {
+    chatbotContainer.style.display =
+      chatbotContainer.style.display === "flex" ? "none" : "flex";
+  };
+
+  sendBtn.onclick = () => {
+    const question = userInput.value.trim().toLowerCase();
+    if (!question) return;
+
+    const userMsg = document.createElement("div");
+    userMsg.className = "chat-bubble user-bubble";
+    userMsg.textContent = userInput.value;
+    chatbotBody.appendChild(userMsg);
+
+    const reply = document.createElement("div");
+    reply.className = "chat-bubble";
+
+    const answerKey = Object.keys(responses).find(key =>
+      question.includes(key)
+    );
+
+    reply.textContent = answerKey
+      ? responses[answerKey]
+      : "Sorry, I don’t have an answer to that yet. Try asking something else about PrEP.";
+
+    chatbotBody.appendChild(reply);
+    userInput.value = "";
+    chatbotBody.scrollTop = chatbotBody.scrollHeight;
+  };
+</script>
+
 </body>
 </html>
